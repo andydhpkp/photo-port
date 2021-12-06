@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+//You need to import React in every component file
+import React from 'react';
+import Nav from './components/Nav'
+import About from './components/About';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav></Nav>
+      <main>
+        {/* components look like any other JSX element, using PascalCase can help you distinguish */}
+        <About></About>
+      </main>
     </div>
   );
 }
